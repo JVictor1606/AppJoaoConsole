@@ -11,6 +11,7 @@ namespace AppJoaoConsole
         static void Main(string[] args)
         {
             Console.WriteLine("Meu primeiro projeto");
+            Console.WriteLine("Rafael participando do projeto!");
             Console.Read();
         }
     }
