@@ -1,8 +1,10 @@
-﻿using System;
+﻿using AppJoaoConsole.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace AppJoaoConsole
 {
@@ -10,8 +12,14 @@ namespace AppJoaoConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Meu primeiro projeto");
-            Console.WriteLine("Rafael participando do projeto!");
+            Venda venda = new Venda();
+            venda.Id = 1;
+            venda.Valor = 90M;
+            venda.Data = DateTime.Now;
+
+
+            Console.WriteLine("O nome é: " + venda.Data.ToString());
+            Console.WriteLine("Valor: " + venda.Valor.ToString());
             Console.Read();
         }
     }
