@@ -6,11 +6,26 @@ using System.Threading.Tasks;
 
 namespace AppJoaoConsole.Model
 {
-    public class Cliente
+    public class Cliente : Entidade
     {
-        public int NumeroDeIdentificacao { get; set; }
         public string Nome { get; set; }
         public string Endereco { get; set; }
         public int Tipo { get; set; }
+        
+        public Cliente() 
+        {
+
+        }
+
+        public Cliente(string Nome)
+        {
+            this.Nome = Nome;
+        }
+
+        public void ExibirCliente() 
+        {
+            Console.WriteLine("Nome: " + Nome);
+        }
+        
     }
 }

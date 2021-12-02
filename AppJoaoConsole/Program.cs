@@ -12,14 +12,22 @@ namespace AppJoaoConsole
     {
         static void Main(string[] args)
         {
-            Venda venda = new Venda();
-            venda.Id = 1;
-            venda.Valor = 90M;
-            venda.Data = DateTime.Now;
+            Cliente cli1 = new Cliente("Primeiro Cliente");
+
+            Cliente cli2 = new Cliente("Segundo Cliente");
+
+            Cliente cli3 = new Cliente();
+
+            
+
+            //cli1.ExibirCliente();
+            //cli2.ExibirCliente();
+
+            Console.WriteLine(cli1.Id);
+            Console.WriteLine(cli2.Id);
 
 
-            Console.WriteLine("O nome é: " + venda.Data.ToString());
-            Console.WriteLine("Valor: " + venda.Valor.ToString());
+
             Console.Read();
         }
     }
