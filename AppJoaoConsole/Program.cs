@@ -12,14 +12,14 @@ namespace AppJoaoConsole
     {
         static void Main(string[] args)
         {
-            Venda venda = new Venda();
-            venda.Id = 1;
-            venda.Valor = 90M;
-            venda.Data = DateTime.Now;
+            Carro carro = new Carro();
+            carro.Cor = "Vermelho";
+            carro.Placa = "RDU-456";
+            carro.Ano = 2015;
 
 
-            Console.WriteLine("O nome é: " + venda.Data.ToString());
-            Console.WriteLine("Valor: " + venda.Valor.ToString());
+            Console.WriteLine("O nome é: " + carro.Cor);
+            Console.WriteLine("Valor: " + carro.Placa);
             Console.Read();
         }
     }

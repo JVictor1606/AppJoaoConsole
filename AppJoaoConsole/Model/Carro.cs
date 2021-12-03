@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace AppJoaoConsole.Model
 {
-    public class Cliente : Funcionario
+    public class Carro
     {
-        public int NumeroDeIdentificacao { get; set; }
-
-        public Caixa Caixa { get; set; }
-    }
+       
 }
