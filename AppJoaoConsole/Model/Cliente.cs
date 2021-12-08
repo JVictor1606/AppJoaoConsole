@@ -6,10 +6,32 @@ using System.Threading.Tasks;
 
 namespace AppJoaoConsole.Model
 {
-    public class Cliente : Funcionario
+    public class Cliente 
     {
-        public int NumeroDeIdentificacao { get; set; }
+        public string Id { get; set; }
+        
+        public string Cpf { get; set; }
+        public string Nome { get; set; }
+        public string Endereco { get; set; }
+         
+        public Cliente()
+        {
+            
+        }
 
-        public Caixa Caixa { get; set; }
+
+       
+        public virtual string SetId(string id)
+        {
+           id = Guid.NewGuid().ToString();
+            return id;
+            
+        }
+        public void  GetId()
+        {
+            
+        }
+
+
     }
 }

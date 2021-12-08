@@ -6,12 +6,31 @@ using System.Threading.Tasks;
 
 namespace AppJoaoConsole.Model
 {
-    internal class Conta : Funcionario 
+    internal class Conta 
     {
-        public void Conta(string id, string name)
+
+        public int Agencia { get; set; }
+        public int NumeroConta { get; set; }
+        public Cliente Cliente { get; set; }
+
+        public string Id { get; set; }
+
+        public Conta()
+        {
+            Cliente = new Cliente();
+        }
+
+
+        public  string SetId(string id)
         {
             id = Guid.NewGuid().ToString();
-            Id = Id;
+            Id = id;
+            return id;
+        }
+
+        public string GetId()
+        {
+            return Id;
         }
     }
 }

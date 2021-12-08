@@ -8,5 +8,6 @@ namespace AppJoaoConsole.Model
 {
     public class Carro
     {
-       
+
+    }
 }

@@ -43,8 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Caixa.cs" />
     <Compile Include="Model\Carro.cs" />
     <Compile Include="Model\Cliente.cs" />
+    <Compile Include="Model\Conta.cs" />
     <Compile Include="Model\Funcionario.cs" />
     <Compile Include="Model\Venda.cs" />
     <Compile Include="Program.cs" />

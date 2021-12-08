@@ -8,11 +8,15 @@ namespace AppJoaoConsole.Model
 {
     public class Funcionario
     {
-        Funcionario (int id, string Nome)
-        {
+       
+        public int Id {  get;  set; }
 
+        public virtual string SetId(string id)
+        {
+          id = Guid.NewGuid().ToString();
+            
+            return id;
         }
-        public int Id {  get; set; }
         public string Cpf { get; set; }
         public string Nome {  get; set; }
         public string Endereco {  get; set; }
