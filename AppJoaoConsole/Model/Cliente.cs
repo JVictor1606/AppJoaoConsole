@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace AppJoaoConsole.Model
 {
-    public class Cliente 
-    {
-        public string Id { get; set; }
-        
+    public class Cliente : Entidade
+    {       
         public string Cpf { get; set; }
         public string Nome { get; set; }
         public string Endereco { get; set; }
@@ -17,21 +15,7 @@ namespace AppJoaoConsole.Model
         public Cliente()
         {
             
-        }
-
-
-       
-        public virtual string SetId(string id)
-        {
-           id = Guid.NewGuid().ToString();
-            return id;
-            
-        }
-        public void  GetId()
-        {
-            
-        }
-
-
+        }         
     }
 }
+

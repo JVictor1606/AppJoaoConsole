@@ -46,8 +46,12 @@
     <Compile Include="Model\Caixa.cs" />
     <Compile Include="Model\Carro.cs" />
     <Compile Include="Model\Cliente.cs" />
+    <Compile Include="Model\ComponentesTela.cs" />
     <Compile Include="Model\Conta.cs" />
+    <Compile Include="Model\Entidade.cs" />
     <Compile Include="Model\Funcionario.cs" />
+    <Compile Include="Model\Gerente.cs" />
+    <Compile Include="Model\Ibonificacao.cs" />
     <Compile Include="Model\Venda.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace AppJoaoConsole.Model
 {
-    internal class Caixa : Funcionario
+    internal class Caixa : Entidade
     {
-        public decimal Saldo  { get; set; }
+        private decimal Saldo   { get; set ; }
 
         public decimal Getsaldo()
         {
-            return Saldo = 100;
+            return Saldo;
         }
 
         public void Depositar(decimal value)
@@ -20,26 +20,19 @@ namespace AppJoaoConsole.Model
             Saldo += value;
         }
 
-        public void Sacar (decimal value)
+        public void Sacar(decimal value)
         {
             if (value <= Saldo)
             {
-                Saldo += value;
+                Saldo -= value;
             }
             else
             {
                 Console.WriteLine("Esse saque não pode ser realizado, pois não tem saldo suficiente");
+                Console.WriteLine("Você tentou sacar : " + value + "R$");
+                Console.WriteLine("Esse é o seu saldo atual = " + Saldo +"R$"); 
             }
-        }
-   
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        }   
+        
     }   
 }

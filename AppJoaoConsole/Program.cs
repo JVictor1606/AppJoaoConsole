@@ -12,34 +12,35 @@ namespace AppJoaoConsole
     {
         static void Main(string[] args)
         {
-            
-            Caixa Paulo = new Caixa();
-            Paulo.Nome = " Paulo";
-            Paulo.Getsaldo();
-            Console.WriteLine(Paulo.Saldo);
-            Paulo.Depositar(500);
-            Console.WriteLine(Paulo.Saldo);
+            ComponentesTela ct = new ComponentesTela();
+            ct.ExibirTopo();
+            ComponentesTela quebra = new ComponentesTela();
 
-            Console.WriteLine("TENTATIVA DE SAQUE :" );
-            Paulo.Sacar(1000);
-            Console.WriteLine("TOTAL DE SALDO :" + Paulo.Saldo);
+            Conta contaAngela = new Conta();
+            contaAngela.Cliente.Nome = "Angela";
+            contaAngela.Agencia = 546;
+            contaAngela.NumeroConta = 546849;
+      
+            Caixa caixaJoao = new Caixa();      
+            caixaJoao.Depositar(100);
+            caixaJoao.Sacar(200);  
 
-            Conta Joao = new Conta();
+            ct.QuebraLinha();
+            Gerente carlos = new Gerente("745.647.753-99");
+            carlos.Nome = "Carlos";
+            carlos.Salario = 5000;
+            Console.WriteLine("Nome do Gerente : " + carlos.Nome);
+            Console.WriteLine("A bonificacao do gerente é : " + carlos.Bonificacao());
+            Console.WriteLine("O Aumento do gerente é : " + carlos.Aumento());
 
-
-            Joao.Cliente.Nome = "João";
-            Joao.Cliente.Cpf = "547.736.874 - 73";
-            Joao.Agencia = 866;
-            Joao.NumeroConta = 8669473;
-
-
-            Console.WriteLine("Nome do Cliente: " + Joao.Cliente.Nome);
-            Console.WriteLine("Saldo do Cliente : " + Joao.Cliente.Id);
-
-
-
-
-
+            ct.QuebraLinha();
+            Gerente sousa = new Gerente("598.457.264-22");
+            sousa.Nome = "Sousa";
+            sousa.Salario = 4500;
+            Console.WriteLine("Nome do Gerente : " + sousa.Nome);
+            Console.WriteLine("A bonificacao do gerente é : " + sousa.Bonificacao());
+            Console.WriteLine("O Aumento do gerente é : " + sousa.Aumento());
+            sousa.GetSalaraio();
 
 
             Console.ReadLine();
