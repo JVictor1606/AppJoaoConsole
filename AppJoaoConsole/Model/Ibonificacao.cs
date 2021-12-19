@@ -11,7 +11,5 @@ namespace AppJoaoConsole.Model
         double Bonificacao();
 
         double Aumento();
-    }
-
-       
+    }       
 }

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace AppJoaoConsole.Model
 {
     public class Cliente : Entidade
+
     {       
         public string Cpf { get; set; }
         public string Nome { get; set; }
@@ -16,6 +17,5 @@ namespace AppJoaoConsole.Model
         {
             
         }         
-    }
 }
 

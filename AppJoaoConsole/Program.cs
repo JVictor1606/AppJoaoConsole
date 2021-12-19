@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AppJoaoConsole
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -41,9 +41,5 @@ namespace AppJoaoConsole
             Console.WriteLine("A bonificacao do gerente é : " + sousa.Bonificacao());
             Console.WriteLine("O Aumento do gerente é : " + sousa.Aumento());
             sousa.GetSalaraio();
-
-
-            Console.ReadLine();
-        }
     }
 }

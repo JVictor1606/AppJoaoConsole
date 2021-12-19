@@ -46,12 +46,18 @@
     <Compile Include="Model\Caixa.cs" />
     <Compile Include="Model\Carro.cs" />
     <Compile Include="Model\Cliente.cs" />
+<<<<<<< HEAD
     <Compile Include="Model\ComponentesTela.cs" />
     <Compile Include="Model\Conta.cs" />
     <Compile Include="Model\Entidade.cs" />
     <Compile Include="Model\Funcionario.cs" />
     <Compile Include="Model\Gerente.cs" />
     <Compile Include="Model\Ibonificacao.cs" />
+=======
+    <Compile Include="Model\ContaBancaria.cs" />
+    <Compile Include="Model\Entidade.cs" />
+    <Compile Include="Model\Pessoa.cs" />
+>>>>>>> 1b94a5808d572314d0449ae882994f05db5dc578
     <Compile Include="Model\Venda.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
